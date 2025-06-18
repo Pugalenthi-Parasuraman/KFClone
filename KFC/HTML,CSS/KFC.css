@@ -140,7 +140,6 @@ a {
 .main-browse {
   display: flex;
   padding-left: 200px;
-  padding-top: 100px;
   border: 1px solid #e3e3e3;
   border-left: 1px;
   border-right: 1px;
@@ -177,7 +176,6 @@ a {
 .main-image {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
 }
 
 .main-image-1o {
@@ -428,4 +426,123 @@ section {
   letter-spacing: 1px;
 }
 
+/* --------- Mobile Devices --------- */
+@media only screen and (max-width: 600px) {
+  .main-browse {
+    padding-left: 20px;
+    font-size: 5vw;
+  }
+.location{
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location img{
+  padding-bottom: 12px;
+}
+
+.button1{
+  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .nav-bar {
+    display: none;
+  }
+
+  .main-image-1, .main-image-2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer-bg {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-content,
+  .footer-content1 {
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-order {
+    flex-direction: column;
+    font-size: medium;
+  }
+
+  .button2 {
+    padding: 10px 30px;
+    font-size: small;
+  }
+
+  .wrapper .item img {
+    width: 90vw;
+  }
+}
+
+/* --------- Tablet Devices --------- */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-browse {
+    padding-left: 50px;
+    font-size: 3vw;   
+    padding-top: 100px;
+  }
+
+  .main-image-1,
+  .main-image-2 {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+    padding-top: 40px;
+  }
+
+  .nav-bar {
+    gap: 200px;
+  }
+
+  .footer-bg {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .wrapper .item img {
+    width: 250px;
+  }
+}
+
+/* --------- Desktop Large Screens--------- */
+@media only screen and (min-width: 1025px) {
+  .main-browse {
+    padding-left: 200px;
+    font-size: 2.5vw;
+    padding-top: 100px;
+  }
+
+  .main-image-1,
+  .main-image-2 {
+    gap: 25px;
+    padding-top: 40px;
+  }
+
+  .nav-bar {
+    gap: 550px;
+  }
+
+  .footer-bg {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .wrapper .item img {
+    width: 300px;
+  }
+}
 
